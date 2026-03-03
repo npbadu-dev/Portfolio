@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
-    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Nitesh Prasad Badu | Personal Portfolio</title>
     <link rel="stylesheet" href="src/input.css" />
     <link rel="stylesheet" href="src/output.css" />
@@ -21,7 +20,9 @@
   <body>
     <div class="main-container bg-[#F8FAFC]">
       <header class="nav-header sm:block hidden">
-        <nav class="nav-container py-1.5 px-10 flex items-center justify-between">
+        <nav
+          class="nav-container py-1.5 px-10 flex items-center justify-between"
+        >
           <a href="#"
             ><img
               src="assets/logo.png"
@@ -1185,17 +1186,14 @@
                 href="https://www.instagram.com/niteshprasadbadu/"
                 target="_blank"
               >
-                <i
-                  class="icon ion-social-instagram"
-                  style="font-size: 50px; color: #e4405f"
-                ></i>
+                <ion-icon class="insta" name="logo-instagram"></ion-icon>
               </a>
             </div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>© 2026 YourName. All Rights Reserved.</p>
+          <p>© 2026 Nitesh Prasad Badu. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

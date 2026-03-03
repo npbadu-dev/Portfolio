@@ -676,11 +676,11 @@ html {
   font-size: 14px;
   color: #aaa;
 }
-.footer-icon{
+.footer-icon {
   height: 28px;
 }
-.insta{
-  color: red;
+.insta {
+  color: #ccc !important;
   font-size: 32px;
 }
 /* Responsive */
