@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="main-container bg-[#F8FAFC]">
-      <header class="nav-header sm:block hidden">
+      <!-- <header class="nav-header sm:block hidden">
         <nav
           class="nav-container py-1.5 px-10 flex items-center justify-between"
         >
@@ -46,8 +46,37 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </header> -->
 
+      <header class="main-header">
+        <nav class="nav-bar">
+          <div class="logo-img">
+            <a href="#"><img src="assets/logo.png" alt="Logo" /></a>
+          </div>
+
+          <ul class="nav-links-desktop">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#cta" class="nav-btn">Contact</a></li>
+          </ul>
+
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+
+        <div class="mobile-overlay" id="mobile-overlay">
+          <ul class="mobile-nav-links">
+            <li><a href="#home" class="m-link">Home</a></li>
+            <li><a href="#about" class="m-link">About</a></li>
+            <li><a href="#projects" class="m-link">Projects</a></li>
+            <li><a href="#skills" class="m-link">Skills</a></li>
+            <li><a href="#cta" class="m-link">Contact</a></li>
+          </ul>
+        </div>
+      </header>
       <div
         class="hero-section relative grid sm:h-[70vh] sm:grid-cols-12 sm:py-20 sm:px-6 py-2 px-1 px-3"
       >
