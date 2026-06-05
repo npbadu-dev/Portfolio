@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitesh Prasad Badu | Portfolio Website</title>
+    <!-- Core Style Sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- GLOBAL NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">NPB<span class="logo-dot">.</span></a>
+
+        <!-- Desktop Links -->
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <!-- <a href="#achievements" class="nav-link">Achievements</a> -->
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="../assests/resume.docx" class="btn btn-primary" download>
+            Resume
+          </a>
+          <button
+            id="theme-toggle-btn"
+            class="theme-btn"
+            aria-label="Toggle Theme"
+          >
+            <svg
+              class="sun-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <svg
+              class="moon-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-toggle"
+          class="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-dropdown" class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <!-- <a href="#achievements" class="mobile-link">Achievements</a> -->
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a
+          href="../assests/resume.docx"
+          class="mobile-link mobile-resume"
+          download
+          >Resume</a
+        >
+        <!-- Mobile theme toggle (visible inside mobile menu) -->
+        <div
+          class="mobile-theme-row"
+          style="
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 8px;
+            display: flex;
+          "
+        >
+          <button
+            id="mobile-theme-toggle-btn"
+            class="theme-btn mobile-theme-btn"
+            aria-label="Toggle Theme"
+            style="display: flex; align-items: center; gap: 8px"
+          >
+            <svg
+              class="sun-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              style="width: 18px; height: 18px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <svg
+              class="moon-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              style="width: 18px; height: 18px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section section-container">
+      <div class="hero-grid">
+        <div class="hero-text-side">
+          <span class="hero-badge">Available for Internships</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Nitesh Prasad Badu</span>
+          </h1>
+          <p class="hero-subtitle">BSC. CSIT Student & Full-Stack Developer</p>
+          <p class="hero-desc">
+            Building scalable web applications, crafting intuitive user
+            experiences, and leveraging data-driven solutions to solve
+            real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+          </div>
+        </div>
+
+        <!-- Interactive Code Card Side -->
+        <div class="hero-visual-side">
+          <div id="interactive-code-card" class="code-card">
+            <div class="card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">developer.js</span>
+            </div>
+            <div class="card-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    name: <span class="code-string">'Nitesh Prasad Badu'</span>,
+    role: <span class="code-string">'Software Engineer'</span>,
+    skills: [<span class="code-string">'HTML5'</span>, <span class="code-string">'CSS3'</span>, <span class="code-string">'JavaScript'</span>],
+    passionate: <span class="code-boolean">true</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section
+      id="about"
+      class="about-section section-container section-border-top"
+    >
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Info Split -->
+        <div class="about-info-side">
+          <div class="bio-panel">
+            <div class="panel-title-row text-accent">
+              <svg
+                class="icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                ></path>
+              </svg>
+              <h3>Bio</h3>
+            </div>
+            <p class="panel-desc">
+              I'm a BSc. CSIT student and Full-Stack Developer with a passion
+              for building scalable web applications and solving real-world
+              problems through technology. I enjoy working across both frontend
+              and backend development, creating seamless user experiences backed
+              by efficient and reliable systems. Beyond web development, I have
+              a growing interest in data engineering and continuously explore
+              modern tools and technologies to expand my skills. I'm always
+              eager to learn, collaborate, and contribute to impactful projects
+              that drive innovation.
+            </p>
+          </div>
+
+          <div class="timeline-grid">
+            <!-- Education -->
+            <div class="timeline-card">
+              <div class="panel-title-row text-accent border-bottom">
+                <svg
+                  class="icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 14l9-5-9-5-9 5 9 5z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                  ></path>
+                </svg>
+                <h4>Education</h4>
+              </div>
+              <div class="timeline-item">
+                <h5>BSc CSIT</h5>
+                <p class="timeline-org">Siddhanath Science Campus</p>
+                <p class="timeline-date">2025 - Present</p>
+                <span class="inline-badge">TU based</span>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="timeline-card">
+              <div class="panel-title-row text-accent border-bottom">
+                <svg
+                  class="icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <h4>Experience</h4>
+              </div>
+              <div class="timeline-item no-border">
+                <div class="sub-item">
+                  <h5>MediCare Hospital Build</h5>
+                  <!-- <p class="timeline-org">Twist Digital | Since March 2025</p> -->
+                  <p class="timeline-org">HTML, CSS & Tailwind</p>
+                </div>
+                <div class="sub-item">
+                  <h5>OmniFood Website</h5>
+                  <!-- <p class="timeline-org">SLIIT Media Unit | Freelance</p> -->
+                  <p class="timeline-org">HTML & CSS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Profile Snapshot Card -->
+        <div class="profile-card">
+          <div class="profile-frame">
+            <div class="animated-ring"></div>
+            <div class="avatar-wrapper">
+              <img src="assests/profile.png" alt="Nitesh Prasad Badu" />
+            </div>
+            <!-- <span class="metric-badge">3.41 GPA</span> -->
+            <span class="metric-badge">Open to Internship</span>
+          </div>
+
+          <div class="profile-identity">
+            <h3>Nitesh Prasad Badu</h3>
+            <p>BSC CSIT Student</p>
+            <p>Siddhanath Science Campus, Mahendranagar</p>
+          </div>
+
+          <div class="badge-cloud justify-center">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">Tailwind</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+
+          <a
+            href="../assests/resume.docx"
+            download
+            class="btn btn-primary btn-full flex-center"
+          >
+            <svg
+              class="icon-sm"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              ></path>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section
+      id="projects"
+      class="projects-section section-container section-border-top"
+    >
+      <div class="section-header">
+        <h2>Projects</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div class="project-visual">
+            <img src="assests/Foodie.png" alt="Foodie Restaurant" />
+          </div>
+          <div class="project-body">
+            <h3>Foodie Restaurant</h3>
+            <p>
+              A modern, responsive food delivery website built with HTML, CSS
+              (Tailwind CSS), and JavaScript. The website allows users to browse
+              food categories, view restaurants, check offers, and track orders.
+            </p>
+            <div class="badge-cloud">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Tailwind</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com/npbadu-dev/Foodie-Restaurant"
+              target="_blank"
+              class="btn-outline flex-center"
+            >
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://foodie-lyart-one.vercel.app/"
+              class="live-demo-link btn-outline flex-center"
+              target="_blank"
+              >🌐 Live Demo</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card">
+          <div class="project-visual">
+            <img src="assests/MediCare.png" alt="MediCare Hospital" />
+          </div>
+          <div class="project-body">
+            <h3>MediCare Hospital</h3>
+            <p>
+              A fully responsive healthcare landing page built with HTML, CSS,
+              JavaScript, and Tailwind. Features a modern UI, doctor and service
+              showcases, appointment booking, and an optimized user experience
+              across all devices.
+            </p>
+            <div class="badge-cloud">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Tailwind</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="btn-outline flex-center"
+            >
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://medi-care-sable-gamma.vercel.app/"
+              class="live-demo-link btn-outline flex-center"
+              target="_blank"
+              >🌐 Live Demo</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card">
+          <div class="project-visual">
+            <img src="assests/OmniFood.png" alt="OmniFood" />
+          </div>
+          <div class="project-body">
+            <h3>OmniFood</h3>
+            <p>
+              Built an AI-driven meal planning application that creates
+              customized meal plans based on user preferences, dietary goals,
+              and food restrictions, while supporting subscription-based meal
+              delivery services.
+            </p>
+            <div class="badge-cloud">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="btn-outline flex-center"
+            >
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://omnifood-npbadu.netlify.app/"
+              class="live-demo-link btn-outline flex-center"
+              target="_blank"
+              >🌐 Live Demo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="expansion-row">
+        <button id="show-more-projects-btn" class="btn-text">
+          <span>Show More Projects</span>
+          <span class="brackets">&lt;&gt;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section
+      id="skills"
+      class="skills-section section-container section-border-top"
+    >
+      <div class="section-header">
+        <h2>Skills</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Cat 1 -->
+        <div class="skills-card">
+          <div class="card-title-row">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              ></path>
+            </svg>
+            <h3>Skills</h3>
+          </div>
+          <div class="skills-marquee">
+            <div class="marquee-row marquee-row--fast">
+              <div class="marquee-track">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#F0DB4F"
+                        d="M1.408 1.408h125.184v125.185H1.408z"
+                      ></path>
+                      <path
+                        fill="#323330"
+                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#E44D26"
+                        d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                      ></path>
+                      <path
+                        fill="#F16529"
+                        d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">HTML5</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#1572B6"
+                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
+                      ></path>
+                      <path
+                        fill="#33A9DC"
+                        d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">CSS3</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#a9bacd"
+                        d="M125 50c-4-32-24-50-62-50C29 0 3 24 3 64c0 39 24 64 64 64 32 0 55-19 58-50H87c-2 11-8 20-20 20-21 0-24-16-24-33 0-23 8-35 22-35 13 0 20 7 22 20z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">C</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#00599c"
+                        d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"
+                      ></path>
+                      <path
+                        fill="#004482"
+                        d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"
+                      ></path>
+                      <path
+                        fill="#659ad2"
+                        d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">C++</div>
+                </div>
+
+                <!-- duplicate for seamless loop -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#F0DB4F"
+                        d="M1.408 1.408h125.184v125.185H1.408z"
+                      ></path>
+                      <path
+                        fill="#323330"
+                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#E44D26"
+                        d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                      ></path>
+                      <path
+                        fill="#F16529"
+                        d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">HTML5</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#1572B6"
+                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
+                      ></path>
+                      <path
+                        fill="#33A9DC"
+                        d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">CSS3</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#a9bacd"
+                        d="M125 50c-4-32-24-50-62-50C29 0 3 24 3 64c0 39 24 64 64 64 32 0 55-19 58-50H87c-2 11-8 20-20 20-21 0-24-16-24-33 0-23 8-35 22-35 13 0 20 7 22 20z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">C</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#00599c"
+                        d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"
+                      ></path>
+                      <path
+                        fill="#004482"
+                        d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"
+                      ></path>
+                      <path
+                        fill="#659ad2"
+                        d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">C++</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#F0DB4F"
+                        d="M1.408 1.408h125.184v125.185H1.408z"
+                      ></path>
+                      <path
+                        fill="#323330"
+                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#E44D26"
+                        d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                      ></path>
+                      <path
+                        fill="#F16529"
+                        d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">HTML5</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#1572B6"
+                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
+                      ></path>
+                      <path
+                        fill="#33A9DC"
+                        d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
+                      ></path>
+                      <path
+                        fill="#fff"
+                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
+                      ></path>
+                      <path
+                        fill="#EBEBEB"
+                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">CSS3</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-row marquee-row--slow">
+              <div class="marquee-track">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#F34F29"
+                        d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Git</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#001e36"
+                        d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6Z"
+                      ></path>
+                      <path
+                        fill="#31a8ff"
+                        d="M45.867 33.333c-1.6 0-3.2 0-4.853.054-1.654.053-3.201.053-4.641.107-1.44.053-2.773.053-4.053.106-1.227.053-2.08.053-2.987.053-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053.533.053 1.386.053 2.666.053 4.374 0 8.374-.48 12-1.813 3.467-1.28 6.454-3.52 8.587-6.507 2.133-2.986 3.2-6.773 3.2-11.36 0-2.4-.426-4.693-1.226-6.933A16.98 16.98 0 0 0 64 39.36a19.049 19.049 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653Zm1.19 10.505c1.9.036 3.75.368 5.476 1.068 1.547.587 2.827 1.654 3.734 3.04a8.779 8.779 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493-1.174 1.333-2.667 2.347-4.373 2.827-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053 1.013-.054 2.239-.054 3.626-.054.273-.007.546-.008.817-.002zm44.73 2.723c-3.787 0-6.934.586-9.44 1.866-2.293 1.067-4.267 2.773-5.6 4.906-1.173 1.974-1.814 4.16-1.814 6.454a11.447 11.447 0 0 0 1.227 5.44 13.809 13.809 0 0 0 4.054 4.533 32.629 32.629 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506.853.694 1.28 1.387 1.28 2.134 0 .96-.587 1.867-1.44 2.24-.96.48-2.4.747-4.427.747-2.133 0-4.267-.267-6.294-.8a22.834 22.834 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.49 21.49 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693 3.84 0 7.041-.586 9.654-1.706 2.4-.96 4.48-2.613 5.973-4.747a12.41 12.41 0 0 0 2.08-7.093 11.512 11.512 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.625 38.625 0 0 0-8.213-3.894 48.784 48.784 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44-.32-.427-.533-.906-.533-1.386 0-.48.16-1.013.426-1.44.374-.533.96-.907 1.653-1.067 1.014-.266 2.134-.427 3.2-.374 2.027 0 4 .267 5.974.694 1.814.373 3.52.96 5.12 1.814.213.106.48.106.96 0a.656.656 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64-.107-.213-.32-.427-.533-.48A18.762 18.762 0 0 0 98.4 47.04a45.98 45.98 0 0 0-6.613-.48z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">PhotoShop</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                        fill="#38bdf8"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Tailwind</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <defs>
+                        <linearGradient
+                          id="a"
+                          x1="76.079"
+                          x2="523.48"
+                          y1="10.798"
+                          y2="365.95"
+                          gradientTransform="translate(1.11 14.613) scale(.24566)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#9013fe"></stop>
+                          <stop offset="1" stop-color="#6610f2"></stop>
+                        </linearGradient>
+                        <linearGradient
+                          id="b"
+                          x1="193.51"
+                          x2="293.51"
+                          y1="109.74"
+                          y2="278.87"
+                          gradientTransform="translate(0 52)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#fff"></stop>
+                          <stop offset="1" stop-color="#f1e5fc"></stop>
+                        </linearGradient>
+                        <filter
+                          id="c"
+                          width="197"
+                          height="249"
+                          x="161.9"
+                          y="135.46"
+                          color-interpolation-filters="sRGB"
+                          filterUnits="userSpaceOnUse"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          ></feFlood>
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          ></feColorMatrix>
+                          <feOffset dy="4"></feOffset>
+                          <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                          <feColorMatrix
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                          ></feColorMatrix>
+                          <feBlend
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow"
+                          ></feBlend>
+                          <feBlend
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow"
+                            result="shape"
+                          ></feBlend>
+                        </filter>
+                      </defs>
+                      <path
+                        fill="url(#a)"
+                        d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+                      ></path>
+                      <path
+                        fill="url(#b)"
+                        d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+                        filter="url(#c)"
+                        transform="translate(1.494 2.203) scale(.24566)"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#0acf83"
+                        d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
+                      ></path>
+                      <path
+                        fill="#a259ff"
+                        d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
+                      ></path>
+                      <path
+                        fill="#f24e1e"
+                        d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
+                      ></path>
+                      <path
+                        fill="#ff7262"
+                        d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
+                      ></path>
+                      <path
+                        fill="#1abcfe"
+                        d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Figma</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#2A0634"
+                        d="M50.3 38.5h-7.4v20.7h7.4c5 0 9.1-4.1 9.1-9.1v-2.4c0-5.1-4.1-9.2-9.1-9.2z"
+                      ></path>
+                      <path
+                        fill="#2A0634"
+                        d="M0 0v128h128V0H0zm51.2 67.5h-8.3v21.3h-9.6V30.3h18.5c9.4-.1 17.1 7.4 17.2 16.8v2.3c0 9.9-8 18-17.8 18.1zm46.1-14.2s-7 0-10.1 1.3v34.2H77.1V48.9s10.2-5.1 20.2-3.8v8.2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Premier Pro</div>
+                </div>
+                <!-- duplicate for seamless loop -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#F34F29"
+                        d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Git</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#001e36"
+                        d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6Z"
+                      ></path>
+                      <path
+                        fill="#31a8ff"
+                        d="M45.867 33.333c-1.6 0-3.2 0-4.853.054-1.654.053-3.201.053-4.641.107-1.44.053-2.773.053-4.053.106-1.227.053-2.08.053-2.987.053-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053.533.053 1.386.053 2.666.053 4.374 0 8.374-.48 12-1.813 3.467-1.28 6.454-3.52 8.587-6.507 2.133-2.986 3.2-6.773 3.2-11.36 0-2.4-.426-4.693-1.226-6.933A16.98 16.98 0 0 0 64 39.36a19.049 19.049 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653Zm1.19 10.505c1.9.036 3.75.368 5.476 1.068 1.547.587 2.827 1.654 3.734 3.04a8.779 8.779 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493-1.174 1.333-2.667 2.347-4.373 2.827-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053 1.013-.054 2.239-.054 3.626-.054.273-.007.546-.008.817-.002zm44.73 2.723c-3.787 0-6.934.586-9.44 1.866-2.293 1.067-4.267 2.773-5.6 4.906-1.173 1.974-1.814 4.16-1.814 6.454a11.447 11.447 0 0 0 1.227 5.44 13.809 13.809 0 0 0 4.054 4.533 32.629 32.629 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506.853.694 1.28 1.387 1.28 2.134 0 .96-.587 1.867-1.44 2.24-.96.48-2.4.747-4.427.747-2.133 0-4.267-.267-6.294-.8a22.834 22.834 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.49 21.49 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693 3.84 0 7.041-.586 9.654-1.706 2.4-.96 4.48-2.613 5.973-4.747a12.41 12.41 0 0 0 2.08-7.093 11.512 11.512 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.625 38.625 0 0 0-8.213-3.894 48.784 48.784 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44-.32-.427-.533-.906-.533-1.386 0-.48.16-1.013.426-1.44.374-.533.96-.907 1.653-1.067 1.014-.266 2.134-.427 3.2-.374 2.027 0 4 .267 5.974.694 1.814.373 3.52.96 5.12 1.814.213.106.48.106.96 0a.656.656 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64-.107-.213-.32-.427-.533-.48A18.762 18.762 0 0 0 98.4 47.04a45.98 45.98 0 0 0-6.613-.48z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">PhotoShop</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                        fill="#38bdf8"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Tailwind</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <defs>
+                        <linearGradient
+                          id="a"
+                          x1="76.079"
+                          x2="523.48"
+                          y1="10.798"
+                          y2="365.95"
+                          gradientTransform="translate(1.11 14.613) scale(.24566)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#9013fe"></stop>
+                          <stop offset="1" stop-color="#6610f2"></stop>
+                        </linearGradient>
+                        <linearGradient
+                          id="b"
+                          x1="193.51"
+                          x2="293.51"
+                          y1="109.74"
+                          y2="278.87"
+                          gradientTransform="translate(0 52)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#fff"></stop>
+                          <stop offset="1" stop-color="#f1e5fc"></stop>
+                        </linearGradient>
+                        <filter
+                          id="c"
+                          width="197"
+                          height="249"
+                          x="161.9"
+                          y="135.46"
+                          color-interpolation-filters="sRGB"
+                          filterUnits="userSpaceOnUse"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          ></feFlood>
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          ></feColorMatrix>
+                          <feOffset dy="4"></feOffset>
+                          <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                          <feColorMatrix
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                          ></feColorMatrix>
+                          <feBlend
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow"
+                          ></feBlend>
+                          <feBlend
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow"
+                            result="shape"
+                          ></feBlend>
+                        </filter>
+                      </defs>
+                      <path
+                        fill="url(#a)"
+                        d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+                      ></path>
+                      <path
+                        fill="url(#b)"
+                        d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+                        filter="url(#c)"
+                        transform="translate(1.494 2.203) scale(.24566)"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#0acf83"
+                        d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
+                      ></path>
+                      <path
+                        fill="#a259ff"
+                        d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
+                      ></path>
+                      <path
+                        fill="#f24e1e"
+                        d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
+                      ></path>
+                      <path
+                        fill="#ff7262"
+                        d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
+                      ></path>
+                      <path
+                        fill="#1abcfe"
+                        d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Figma</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 128 128">
+                      <path
+                        fill="#2A0634"
+                        d="M50.3 38.5h-7.4v20.7h7.4c5 0 9.1-4.1 9.1-9.1v-2.4c0-5.1-4.1-9.2-9.1-9.2z"
+                      ></path>
+                      <path
+                        fill="#2A0634"
+                        d="M0 0v128h128V0H0zm51.2 67.5h-8.3v21.3h-9.6V30.3h18.5c9.4-.1 17.1 7.4 17.2 16.8v2.3c0 9.9-8 18-17.8 18.1zm46.1-14.2s-7 0-10.1 1.3v34.2H77.1V48.9s10.2-5.1 20.2-3.8v8.2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="skill-label">Premier Pro</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cat 2 -->
+        <!-- <div class="skills-card">
+          <div class="card-title-row">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z"
+              ></path>
+            </svg>
+            <h3>Frontend</h3>
+          </div>
+          <div class="badge-cloud">
+            <span class="tech-pill active">React</span>
+            <span class="tech-pill active">React Native</span>
+            <span class="tech-pill active">Next.js</span>
+            <span class="tech-pill active">CSS3</span>
+          </div>
+        </div> -->
+
+        <!-- Cat 3 -->
+        <!-- <div class="skills-card">
+          <div class="card-title-row">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2"
+              ></path>
+            </svg>
+            <h3>Backend</h3>
+          </div>
+          <div class="badge-cloud">
+            <span class="tech-pill active">Node.js</span>
+            <span class="tech-pill active">Express.js</span>
+            <span class="tech-pill active">REST APIs</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section
+      id="achievements"
+      class="achievements-section section-container section-border-top"
+    >
+      <div class="achievements-header-row">
+        <div class="section-header">
+          <h2>Achievements</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="slider-controls">
+          <button
+            id="slider-prev-btn"
+            class="ctrl-btn"
+            aria-label="Previous Slide"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+          <button id="slider-next-btn" class="ctrl-btn" aria-label="Next Slide">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="achievements-track" class="achievements-track">
+        <!-- Slide 1 -->
+        <div class="achievement-card">
+          <div class="ach-icon-box">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707"
+              ></path>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <span class="ach-tag">Competition</span>
+            <h3>Smart India Hackathon Finalist</h3>
+            <p>Issued by Government Ministry</p>
+          </div>
+          <div class="ach-footer">
+            <span class="ach-date">Dec 2024</span>
+            <a href="#" class="ach-link">View Details →</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="achievement-card">
+          <div class="ach-icon-box">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.428 15.428a2 2 0 00-1.022-.547"
+              ></path>
+            </svg>
+          </div>
+          <div class="ach-content">
+            <span class="ach-tag">Certification</span>
+            <h3>AWS Cloud Practitioner</h3>
+            <p>Issued by Amazon Web Services</p>
+          </div>
+          <div class="ach-footer">
+            <span class="ach-date">Feb 2025</span>
+            <a href="#" class="ach-link">Verify Credential →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION -->
+    <section
+      id="contact"
+      class="contact-section section-container section-border-top"
+    >
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Channels -->
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>
+            I am open to internship opportunities, freelance partnerships, or
+            full-time roles.
+          </p>
+
+          <div class="channel-list">
+            <div class="channel-row">
+              <div class="channel-icon-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span class="channel-label">Email Me</span>
+                <a href="mailto:aathif.zahir@example.com" class="channel-value"
+                  >niteshprasadbadu@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="form-card">
+          <form id="portfolio-contact-form" class="main-form">
+            <div class="form-row-split">
+              <div class="input-group">
+                <label for="form-name">Your Name</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="input-group">
+                <label for="form-email">Your Email</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  required
+                  placeholder="john@example.com"
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="form-message">Message</label>
+              <textarea
+                id="form-message"
+                rows="5"
+                required
+                placeholder="Hi Aathif..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <p>© 2026 Aathif Zahir. All Rights Reserved.</p>
+        <p class="footer-tech">Built with HTML • CSS • JS</p>
+      </div>
+    </footer>
+
+    <!-- LOGIC SYSTEM SCRIPTS -->
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/achievements.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
