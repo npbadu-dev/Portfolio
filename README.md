@@ -3,6 +3,8 @@
 A responsive personal portfolio website for Nitesh Prasad Badu showcasing an interactive hero, projects, skills, and contact sections. Built with semantic HTML, a single CSS stylesheet, and small vanilla JavaScript modules for interactivity and theme management.
 
 🌐 Live link: https://portfolio-kappa-gilt-42.vercel.app/
+
+
 **Highlights**
 
 - Responsive layout for desktop and mobile
