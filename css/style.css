@@ -714,6 +714,83 @@ body {
   font-weight: 700;
 }
 
+/* Skills marquee rows */
+.skills-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.marquee-row {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+.marquee-track {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  white-space: nowrap;
+}
+.skill-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), transparent);
+  box-shadow: 0 4px 10px rgba(2, 6, 23, 0.12);
+  color: var(--text-main);
+}
+.skill-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 8px;
+  
+  color: #fff;
+}
+.skill-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* animation */
+.marquee-row--fast .marquee-track {
+  animation: marquee-left 16s linear infinite;
+}
+.marquee-row--slow .marquee-track {
+  animation: marquee-left 16s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .skill-item {
+    min-width: 90px;
+    padding: 10px;
+  }
+  .skill-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* ==========================================================================
    ACHIEVEMENTS CAROUSEL TRACKER
    ========================================================================== */
