@@ -629,6 +629,8 @@ body {
 
 .project-footer {
   padding: 0 24px 24px 24px;
+  display: flex;
+  gap: 10px;
 }
 
 .expansion-row {
@@ -658,6 +660,11 @@ body {
   color: var(--brand-accent);
 }
 
+.live-demo-link{
+    text-decoration: none;
+    text-align: center;
+    
+}
 /* ==========================================================================
    SKILLS CLOUD ARCHITECTURE
    ========================================================================== */
@@ -693,6 +700,11 @@ body {
 /* ==========================================================================
    ACHIEVEMENTS CAROUSEL TRACKER
    ========================================================================== */
+.achievements-section {
+    /* Hidden intentionally: keep section markup in the code, remove from visual UI */
+    display: none !important;
+}
+
 .achievements-header-row {
   display: flex;
   align-items: flex-end;
