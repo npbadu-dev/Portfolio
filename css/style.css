@@ -754,7 +754,7 @@ body {
   justify-content: center;
   font-weight: 700;
   margin-bottom: 8px;
-  
+  /* background-color: var(--brand-accent); */
   color: #fff;
 }
 .skill-label {
@@ -765,9 +765,26 @@ body {
 /* animation */
 .marquee-row--fast .marquee-track {
   animation: marquee-left 16s linear infinite;
+  animation-direction: normal;
 }
 .marquee-row--slow .marquee-track {
   animation: marquee-left 16s linear infinite;
+  animation-direction: reverse;
+}
+
+/* Pause animation when hovering the track (or any child), and add hover zoom */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+.skill-item {
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 180ms;
+}
+.skill-item:hover {
+  transform: scale(1.08);
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.18);
 }
 
 @keyframes marquee-left {
