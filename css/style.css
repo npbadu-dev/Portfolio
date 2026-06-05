@@ -12,6 +12,15 @@
   --brand-accent-hover: #1d4ed8;
   --font-stack:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Code window colors (light theme defaults) */
+  --code-bg: #f8fafc; /* light card background */
+  --code-header-bg: #eef2f7;
+  --code-border: var(--border-color);
+  --code-title: #6b7280;
+  --code-keyword: #b91c1c;
+  --code-variable: #0369a1;
+  --code-string: #065f46;
+  --code-boolean: #92400e;
 }
 
 [data-theme="dark"] {
@@ -23,6 +32,15 @@
   --text-muted: #9ca3af;
   --brand-accent: #06b6d4;
   --brand-accent-hover: #0891b2;
+  /* Dark theme overrides for code window */
+  --code-bg: #0f172a;
+  --code-header-bg: #1e293b;
+  --code-border: rgba(255, 255, 255, 0.08);
+  --code-title: #94a3b8;
+  --code-keyword: #f472b6;
+  --code-variable: #38bdf8;
+  --code-string: #34d399;
+  --code-boolean: #fb923c;
 }
 
 * {
@@ -331,8 +349,8 @@ body {
 
 /* 3D Code Window Frame */
 .code-card {
-  background-color: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
@@ -340,7 +358,7 @@ body {
 }
 
 .card-header {
-  background-color: #1e293b;
+  background-color: var(--code-header-bg);
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -368,7 +386,7 @@ body {
 }
 
 .window-title {
-  color: #94a3b8;
+  color: var(--code-title);
   font-size: 0.75rem;
   font-family: monospace;
   position: absolute;
@@ -384,16 +402,16 @@ body {
 }
 
 .code-keyword {
-  color: #f472b6;
+  color: var(--code-keyword);
 }
 .code-variable {
-  color: #38bdf8;
+  color: var(--code-variable);
 }
 .code-string {
-  color: #34d399;
+  color: var(--code-string);
 }
 .code-boolean {
-  color: #fb923c;
+  color: var(--code-boolean);
 }
 
 /* ==========================================================================
@@ -660,10 +678,9 @@ body {
   color: var(--brand-accent);
 }
 
-.live-demo-link{
-    text-decoration: none;
-    text-align: center;
-    
+.live-demo-link {
+  text-decoration: none;
+  text-align: center;
 }
 /* ==========================================================================
    SKILLS CLOUD ARCHITECTURE
@@ -701,8 +718,8 @@ body {
    ACHIEVEMENTS CAROUSEL TRACKER
    ========================================================================== */
 .achievements-section {
-    /* Hidden intentionally: keep section markup in the code, remove from visual UI */
-    display: none !important;
+  /* Hidden intentionally: keep section markup in the code, remove from visual UI */
+  display: none !important;
 }
 
 .achievements-header-row {
